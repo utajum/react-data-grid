@@ -1,5 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
+import ReactTestUtils from 'react-dom/test-utils';
 import RowsContainer, { getNewContextMenuProps, SimpleRowsContainer, DEFAULT_CONTEXT_MENU_ID } from '../RowsContainer';
 
 const FakeContextMenuTrigger = () => <div id="fakeContextMenuTrigger" />;
@@ -23,6 +24,8 @@ const props = {
     { id: 'row_2' }
   ]
 };
+
+
 
 describe('Rows Container', () => {
   describe('getNewContextMenuProps()', () => {
